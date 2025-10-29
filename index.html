@@ -1,16 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-  <title>My Website</title>
-  <!-- CSS link -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our School Project</title>
+
+  <!-- ====== CSS Link ====== -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+    <header>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+        <div>
+          <h1>Our School Project</h1>
+          <div style="font-size:0.9rem;opacity:0.9">Topic: Clean Environment</div>
+        </div>
+        <div>
+          <button class="menu-toggle" id="menuBtn">Menu</button>
+          <nav id="mainNav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#quiz">Quiz</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-  <h1>Welcome to My Website</h1>
-  <button onclick="showMessage()">Click Me</button>
+    <section id="home" class="hero">
+      <h2>Welcome to our School Project</h2>
+      <p>Ye website school project ke liye banayi gayi hai. Yahan aap topic ka introduction, goals aur kuch activities dekh sakte ho.</p>
+    </section>
 
-  <!-- JS link -->
+    <section id="about" class="card">
+      <h3>About</h3>
+      <p>Topic: <strong>Clean Environment</strong>. Maksad: Logo ko safai, paani ki bachat aur ped lagane ke fayde batana.</p>
+      <ul>
+        <li>Problem: Plastic pollution, kachra, paani ka galat istemal</li>
+        <li>Solution: Recycle, reduce, reuse, plantation</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h3>Our Mini Projects</h3>
+      <div class="grid">
+        <div class="card">
+          <h4>Poster</h4>
+          <p>School me awareness poster display karna.</p>
+        </div>
+        <div class="card">
+          <h4>Clean Drive</h4>
+          <p>Ek chhota clean-up event organize karna.</p>
+        </div>
+        <div class="card">
+          <h4>Tree Plantation</h4>
+          <p>School ground me ped lagana aur unka record rakhna.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="card">
+      <h3>Quick Quiz</h3>
+      <p>Question: Kya plastic bottle ko recycle karna chahiye?</p>
+      <label><input type="radio" name="q1" value="yes"> Haan</label><br>
+      <label><input type="radio" name="q1" value="no"> Nahi</label><br>
+      <button id="checkBtn">Check Answer</button>
+      <div id="result" class="result"></div>
+    </section>
+
+    <section id="contact" class="card">
+      <h3>Contact</h3>
+      <p>Teacher: Mr./Ms. Example<br>Class: 7<br>Email: example@school.edu</p>
+    </section>
+
+    <footer>
+      © <span id="year"></span> Our School — Project by Students
+    </footer>
+  </div>
+
+  <!-- ====== JavaScript Link ====== -->
   <script src="script.js"></script>
 </body>
 </html>
